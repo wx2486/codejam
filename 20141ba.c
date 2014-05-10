@@ -5,7 +5,7 @@ int main()
 {
     int cn, cc;
 
-    freopen("a.in", "r", stdin);
+    freopen("A-large-practice.in", "r", stdin);
     freopen("a.out", "w", stdout);
 
     scanf("%d", &cn);
@@ -20,22 +20,23 @@ int main()
         int sum;
 
         scanf("%d", &n);
+        getchar();
 
         for (i=0; i<n; i++)
         {
             char c;
             chn[i] = 0;
-            
+
             while ((c = getchar()) != '\n')
             {
-                if (chn[i] == 0 || c == ch[i][chn[i]])
+                if (chn[i] == 0 || c != ch[i][chn[i]-1])
                 {
                     ch[i][chn[i]] = c;
                     mult[i][chn[i]] = 1;
                     chn[i]++;
                 }
                 else
-                    mult[i][chn[i]]++;
+                    mult[i][chn[i]-1]++;
             }
         }
 
