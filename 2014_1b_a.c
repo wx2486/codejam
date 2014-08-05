@@ -5,8 +5,8 @@ int main()
 {
     int cn, cc;
 
-    freopen("A-large-practice.in", "r", stdin);
-    freopen("a.out", "w", stdout);
+//    freopen("A-large-practice.in", "r", stdin);
+//    freopen("a.out", "w", stdout);
 
     scanf("%d", &cn);
 
