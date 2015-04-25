@@ -51,10 +51,7 @@ int main()
 			vector<double> ang;
 			for (int j=0; j<n; j++)
 				if (j != i)
-					ang.push_back(
-						atan2(
-							y[j] - y[i],
-							x[j] - x[i]));
+					ang.push_back( atan2(y[j] - y[i], x[j] - x[i]) );
 			cout << solve(ang) << endl;
 		}
 	}
